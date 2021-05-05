@@ -1,0 +1,29 @@
+:root{
+    --blue: rgba(19, 118, 199, 0.067);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+/* ------------------------------------- Menu --------------------- */
+.navbar{
+    background-color: springgreen;
+}
+/* ------------------------------------------ Slider img ----------------- */
+.carousel{
+    background-color: palegreen;
+}
+/* -------------------------------------- Contenedor ------------------ */
+.container{
+    background-color:yellowgreen ;
+}
+/* Menu */
+
+/* ---------------------------------------- Footer --------------------- */
+.footer{
+    background-color: tomato;
+}
