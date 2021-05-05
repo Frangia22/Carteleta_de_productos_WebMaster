@@ -1,5 +1,8 @@
 :root{
     --blue: rgba(19, 118, 199, 0.067);
+    --whitewine: #f3f2de;
+    --white: #f0f0f0;
+    --black: #000000;
 }
 *{
     margin: 0;
@@ -7,11 +10,34 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
+    background-color: var(--whitewine);
 }
 /* ------------------------------------- Menu --------------------- */
+/* -------------------------------- Boton ----------------------------------*/
+.btn-menu{
+    display: none;
+}
 .navbar{
-    background-color: springgreen;
+    background-color: transparent;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.list-item{
+    flex-grow: 1;
+    text-align: center;
+}
+.list-item-link{
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    color: var(--black);
+}
+.list-item-link:hover{
+    background-color: peru;
 }
 /* ------------------------------------------ Slider img ----------------- */
 .carousel{
@@ -26,4 +52,23 @@ body{
 /* ---------------------------------------- Footer --------------------- */
 .footer{
     background-color: tomato;
+}
+@media (max-width: 1023px){
+
+}
+@media (max-width: 767px){
+    .btn-menu{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .desplegar{
+        display: block;
+    }
+}
+@media (max-width: 400px){
+    .list-item{
+        min-width: 100%;
+    }
 }
