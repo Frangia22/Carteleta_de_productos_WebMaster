@@ -42,13 +42,32 @@ body{
 /* ------------------------------------------ Slider img ----------------- */
 .carousel{
     background-color: palegreen;
+    padding-top: 10px;
+}
+.carousel-item{
+    text-align: center;
 }
 /* -------------------------------------- Contenedor ------------------ */
 .container{
     background-color:yellowgreen ;
+    max-width: 100%;
 }
-/* Menu */
-
+/* ------------------------------------ Info ---------------- */
+.info{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.shipping{
+    background-color: cadetblue;
+}
+.shop{
+    background-color: burlywood;
+}
+.buysafe{
+    background-color: chartreuse;
+}
 /* ---------------------------------------- Footer --------------------- */
 .footer{
     background-color: tomato;
@@ -59,6 +78,19 @@ body{
 @media (max-width: 767px){
     .btn-menu{
         display: block;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 6px;
+    }
+    .burger-menu{
+        background-image: url(/static/img/burger-menu.png);
+        display: inline-block;
+        width: 2.5em;
+        height: 2.5em;
+        margin: 5px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .navbar{
         display: none;
