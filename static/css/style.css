@@ -2,6 +2,9 @@
     --blue: rgba(19, 118, 199, 0.067);
     --whitewine: #f3f2de;
     --white: #f0f0f0;
+    --lightwine: #e8d84c;
+    --pinkwine: #ba4921;
+    --redwine: #0c0304;
     --black: #000000;
 }
 *{
@@ -9,14 +12,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 body{
     background-color: var(--whitewine);
 }
-/* ------------------------------------- Menu --------------------- */
+/* ------------------------------------- Menu and button --------------------- */
 /* -------------------------------- Boton ----------------------------------*/
 .btn-menu{
     display: none;
 }
+/* ------------------------------------- Menu --------------------- */
 .navbar{
     background-color: transparent;
 }
@@ -49,29 +56,72 @@ body{
 }
 /* -------------------------------------- Contenedor ------------------ */
 .container{
-    background-color:yellowgreen ;
+    background-color: transparent ;
     max-width: 100%;
 }
 /* ------------------------------------ Info ---------------- */
 .info{
-    background-color: aqua;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-items: center;
 }
-.shipping{
-    background-color: cadetblue;
+.shipping, .shop, .buysafe{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
-.shop{
-    background-color: burlywood;
+.text-info{
+    font-weight: bold;
+    text-align: center;
 }
-.buysafe{
-    background-color: chartreuse;
+/*--------------------------------------------- Subtitle ----------------------------------------------------*/
+.header{
+    background-color: var(--lightwine);
+    padding: 10px 0;
+}
+.subtitle-list{
+    list-style: none;
+    display: flex;
+    text-align: end;
+    align-items: center;
+}
+.subtitle-item{
+    flex-grow: 1;
+}
+.subtitle-item-link{
+    text-decoration: none;
+}
+/*-------------------------------------------Card products -----------------------------------------------*/
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.card-body{
+    margin: 10px auto;
+}
+.card-title{
+    padding: 10px 0;
+}
+.card-text{
+    text-align: center;
 }
 /* ---------------------------------------- Footer --------------------- */
 .footer{
     background-color: tomato;
 }
+/* ---------------------------------------- Media queries --------------------- */
 @media (max-width: 1023px){
 
 }
@@ -79,7 +129,7 @@ body{
     .btn-menu{
         display: block;
         background-color: transparent;
-        border: 2px solid black;
+        border: 2px solid var(--black);
         border-radius: 6px;
     }
     .burger-menu{
