@@ -95,6 +95,7 @@ body{
 }
 .subtitle-item-link{
     text-decoration: none;
+    margin-right: 10px;
 }
 /*-------------------------------------------Card products -----------------------------------------------*/
 .row{
@@ -120,7 +121,58 @@ body{
 /* ---------------------------------------- Footer --------------------- */
 .footer{
     background-color: tomato;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+/*------- Medios de pago -------*/
+.payment-medium, .contact-media, .social-media, .news{
+    margin: 20px auto;
+}
+.footer-title{
+    margin-bottom: 10px;
+}
+.payment-list, .contact-list, .social-list{
+    list-style: none;
+}
+.payment-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.payment-item{
+    margin: 5px 20px;
+}
+.payment-icon{
+    max-width: 48px;
+}
+/* ----------- Contacto ---------*/
+.contact-item{
+    display: flex;
+    align-items: center;
+}
+.contact-item-link, .social-item-link{
+    text-decoration: none;
+}
+.img-contact{
+    margin: 5px;
+}
+/*----------- Redes sociales ---------*/
+.social-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-item-link{
+    margin: auto 10px;
+}
+.img-social{
+    filter: saturate(20%) brightness(10%) contrast(50%) opacity(60%);
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+}
+.img-social:hover{
+    transform: translate(10px, -10px);
+    filter: none;
+}
+/* ------------ Newsletter ----------------*/
 /* ---------------------------------------- Media queries --------------------- */
 @media (max-width: 1023px){
 
@@ -148,9 +200,20 @@ body{
     .desplegar{
         display: block;
     }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .payment-medium{
+        width: 50vw;
+    }
 }
 @media (max-width: 400px){
     .list-item{
         min-width: 100%;
+    }
+    .footer{
+        display: block;
+        width: 100%;
     }
 }
