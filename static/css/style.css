@@ -6,6 +6,7 @@
     --pinkwine: #ba4921;
     --redwine: #0c0304;
     --black: #000000;
+    --bottom: 20px;
 }
 *{
     margin: 0;
@@ -41,14 +42,14 @@ body{
     text-decoration: none;
     display: block;
     padding: 10px 0;
-    color: var(--black);
+    color: var(--pinkwine);
 }
 .list-item-link:hover{
-    background-color: peru;
+    color: var(--black);
 }
 /* ------------------------------------------ Slider img ----------------- */
 .carousel{
-    background-color: palegreen;
+    background-color: transparent;
     padding-top: 10px;
 }
 .carousel-item{
@@ -81,7 +82,7 @@ body{
 }
 /*--------------------------------------------- Subtitle ----------------------------------------------------*/
 .header{
-    background-color: var(--lightwine);
+    background-color: var(--pinkwine);
     padding: 10px 0;
 }
 .subtitle-list{
@@ -173,6 +174,18 @@ body{
     filter: none;
 }
 /* ------------ Newsletter ----------------*/
+.form-news{
+    display: inline-block;
+    font-size: 0;
+}
+.form-news-input, .form-news-btn{
+    min-height: 32px;
+    border-radius: 5px;
+}
+.form-news-btn{
+    padding: 0 10px;
+    background-color: var(--white);
+}
 /* ---------------------------------------- Media queries --------------------- */
 @media (max-width: 1023px){
 
