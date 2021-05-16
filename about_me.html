@@ -9,6 +9,96 @@
     <title>The wines club</title>
 </head>
 <body>
+    <button class="btn-menu" type="submit" id="menubtn">
+        <span class="burger-menu"></span>
+    </button>
+    <nav class="navbar" id="nav">
+        <ul class="list">
+            <li class="list-item"><a href="#" class="list-item-link">Inicio</a></li>
+            <li class="list-item"><a href="#" class="list-item-link">Productos</a></li>
+            <li class="list-item"><a href="#" class="list-item-link">Logo</a></li>
+            <li class="list-item"><a href="#" class="list-item-link">Sobre nosotros</a></li>
+            <li class="list-item"><a href="#my-contact" class="list-item-link">Contacto</a></li>
+        </ul>
+    </nav><!-- Cierra el nav -->
+    <div class="breadcrumbs">
+        <ul class="list-bread">
+            <li class="bread-item"><a href="index.html" class="bread-item-link space">Inicio</a></li>
+            <li class="bread-item"><span class="bread-item-span">></span></li>
+            <li class="bread-item"><a href="products.html" class="bread-item-link active">Sobre nosotros</a></li>
+        </ul>
+    </div>
+    <div class="card-about">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOnWhqAj8DwGFb9JXutaRBUnjwWyAYJpKD2r-75KvVdtiNqbeZ824glN4hmemA6CDAoeU&usqp=CAU" class="img-fluid" alt="">
+        <div class="card-about-body">
+            <p class="card-about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis labore veniam fugit explicabo magnam repudiandae quos aliquam sit possimus aperiam, fugiat accusamus provident neque error similique, dolores pariatur harum corporis.</p>
+            <p class="card-about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cum velit veritatis perspiciatis dolorum, earum reiciendis deserunt repudiandae. Quae a quidem quibusdam, expedita culpa commodi assumenda officiis sapiente cumque architecto.</p>
+            <p class="card-about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis voluptatibus voluptate sequi ea exercitationem molestias ratione, perspiciatis quas, nobis assumenda tenetur recusandae aspernatur aut rem debitis perferendis laudantium. Optio, nisi!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info">
+            <div class="shipping">
+                <div class="icon">
+                    <img src="/static/img/free_delivery.png" alt="">
+                </div>
+                <div class="title-info">
+                    <p class="text-info">Envio gratis</p>
+                </div>
+            </div>
+            <div class="shop">
+                <div class="icon">
+                    <img src="/static/img/shop.png" alt="">
+                </div>
+                <div class="title-info">
+                    <p class="text-info">Mira nuestros productos</p>
+                </div>
+            </div>
+            <div class="buysafe">
+                <div class="icon">
+                    <img src="/static/img/buysafe.png" alt="">
+                </div>
+                <div class="title-info">
+                    <p class="text-info">Compra segura</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- Cierra el info -->
+    <footer id="my-contact" class="footer about">
+        <div class="payment-medium">
+            <h3 class="footer-title">Medios de pago</h3>
+            <ul class="payment-list">
+                <li class="payment-item"><img class="payment-icon" src="/static/img/visa@2x.png" alt="Visa"></li>
+                <li class="payment-item"><img class="payment-icon" src="/static/img/mastercard@2x.png" alt="Mastercard"></li>
+                <li class="payment-item"><img class="payment-icon" src="/static/img/mercadopago.png" alt="Mercado Pago"></li>
+                <li class="payment-item"><img class="payment-icon" src="/static/img/pagofacil.png" alt="Pago facil"></li>
+                <li class="payment-item"><img class="payment-icon" src="/static/img/rapipago.png" alt="Rapipago"></li>
+            </ul>
+        </div>
+        <div class="contact-media">
+            <h3 class="footer-title">Contacto</h3>
+            <ul class="contact-list">
+                <li class="contact-item"><img src="/static/img/location.png" alt="Ubicacion" class="img-contact"><a href="#" class="contact-item-link">Ubicación</a></li>
+                <li class="contact-item"><img src="/static/img/gmail.png" alt="Gmail" class="img-contact"><a href="#" class="contact-item-link">Gmail</a></li>
+                <li class="contact-item"><img src="/static/img/whatsapp.png" alt="Whatsapp" class="img-contact"><a href="#" class="contact-item-link">Whatsapp</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3 class="footer-title">Redes sociales</h3>
+            <ul class="social-list">
+                <li class="social-item"><a href="#" class="social-item-link"><img class="img-social" src="/static/img/instagram_black.png" alt="Seguinos en Instagram"></a></li>
+                <li class="social-item"><a href="#" class="social-item-link"><img class="img-social" src="/static/img/facebook_black.png" alt="Seguinos en Facebook"></a></li>
+                <li class="social-item"><a href="#" class="social-item-link"><img class="img-social" src="/static/img/twitter_black.png" alt="Seguinos en Twitter"></a></li>
+            </ul>
+        </div>
+        <div class="news">
+            <h3 class="footer-title">Suscribirse</h3>
+            <form action="" class="form-news">
+                <input type="email" class="form-news-input" placeholder="Correo Electronico ">
+                <button class="form-news-btn" type="submit">Suscribe</button>
+            </form>
+        </div>
+    </footer><!-- Cierra el footer -->
     <script src="/static/js/effects.js"></script>
 </body>
 </html>
