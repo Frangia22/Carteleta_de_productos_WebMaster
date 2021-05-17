@@ -212,6 +212,10 @@ body{
     justify-content: space-between;
     margin-bottom: var(--bottom);
 }
+/* Boton filtrar resultados de busqueda*/
+.filter-btn{
+    display: none;
+}
 .list-bread, .order-by{
     list-style: none;
     display: flex;
@@ -329,7 +333,30 @@ body{
     .category{
         display: none;
     }
-    
+    .breadcrumbs, .filter-btn{
+        display: block;
+    }
+    .mostrarFiltro{
+        display: block;
+        position: absolute;
+        background-color: var(--lightwine);
+        margin: -25px 20px;
+        padding: 5px;
+    }
+    .filter-btn{
+        margin: auto 20px;
+        padding: 10px 0;
+    }
+    .btn-filter{
+        padding: 0 10px;
+        background-color: var(--lightwine);
+        color: var(--black);
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid var(--lightwine);
+        transform: skewX(-20deg);
+        box-shadow: -2px 10px 20px -6px rgb(0,25,14);
+    }
     /* Footer*/
     .footer{
         display: grid;
