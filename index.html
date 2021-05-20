@@ -9,6 +9,11 @@
     <title>The wines club</title>
 </head>
 <body>
+    <header class="header">
+        <a href="#nav" class="sr-only">Skip to navigation</a>
+        <a href="#content" class="sr-only">Skip to content</a>
+        <a href="#my-contact" class="sr-only">Skip to footer</a>
+    </header>
     <button class="btn-menu" type="submit" id="menubtn">
         <span class="burger-menu"></span>
     </button>
@@ -21,74 +26,76 @@
             <li class="list-item"><a href="#my-contact" class="list-item-link">Contacto</a></li>
         </ul>
     </nav><!-- Cierra el nav -->
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="https://bwht.org/wp-content/uploads/placeholder-1000-300.gif" alt="">
-            </div>
-        </div>
-    </div><!-- Cierra el carousel -->
-    <div class="container">
-        <div class="info">
-            <div class="shipping">
-                <div class="icon">
-                    <img src="/static/img/free_delivery.png" alt="">
-                </div>
-                <div class="title-info">
-                    <p class="text-info">Envio gratis</p>
+    <main class="principal" id="content">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="https://bwht.org/wp-content/uploads/placeholder-1000-300.gif" alt="">
                 </div>
             </div>
-            <div class="shop">
-                <div class="icon">
-                    <img src="/static/img/shop.png" alt="">
+        </div><!-- Cierra el carousel -->
+        <div class="container">
+            <div class="info">
+                <div class="shipping">
+                    <div class="icon">
+                        <img src="/static/img/free_delivery.png" alt="">
+                    </div>
+                    <div class="title-info">
+                        <p class="text-info">Envio gratis</p>
+                    </div>
                 </div>
-                <div class="title-info">
-                    <p class="text-info">Mira nuestros productos</p>
+                <div class="shop">
+                    <div class="icon">
+                        <img src="/static/img/shop.png" alt="">
+                    </div>
+                    <div class="title-info">
+                        <p class="text-info">Mira nuestros productos</p>
+                    </div>
                 </div>
-            </div>
-            <div class="buysafe">
-                <div class="icon">
-                    <img src="/static/img/buysafe.png" alt="">
-                </div>
-                <div class="title-info">
-                    <p class="text-info">Compra segura</p>
-                </div>
-            </div>
-        </div>
-    </div><!-- Cierra el info -->
-    <div class="container">
-        <div class="header">
-            <ul class="subtitle-list">
-                <li class="subtitle-item"><h2 class="subtitle-item-link">Nuestros productos</h2></li>
-                <li class="subtitle-item"><a href="products.html" class="subtitle-item-link link-v-m">Ver más</a></li>
-            </ul>
-        </div>
-    </div><!-- Cierra el subtitle -->
-    <div class="container">
-        <div class="product">
-            <div class="card">
-                <img class="img-fluid" src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="">
-                <div class="card-body">
-                    <h3 class="card-title">Nombre del producto</h3>
-                    <p class="card-text">Precio</p>
+                <div class="buysafe">
+                    <div class="icon">
+                        <img src="/static/img/buysafe.png" alt="">
+                    </div>
+                    <div class="title-info">
+                        <p class="text-info">Compra segura</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="img-fluid" src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="">
-                <div class="card-body">
-                    <h3 class="card-title">Nombre del producto</h3>
-                    <p class="card-text">Precio</p>
+        </div><!-- Cierra el info -->
+        <div class="container">
+            <div class="header-subtitle">
+                <ul class="subtitle-list">
+                    <li class="subtitle-item"><h1 class="subtitle-item-link">Nuestros productos</h1></li>
+                    <li class="subtitle-item"><a href="products.html" class="subtitle-item-link link-v-m">Ver más</a></li>
+                </ul>
+            </div>
+        </div><!-- Cierra el subtitle -->
+        <div class="container">
+            <div class="product">
+                <div class="card">
+                    <img class="img-fluid" src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Nombre del producto</h2>
+                        <p class="card-text">Precio</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-fluid" src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Nombre del producto</h2>
+                        <p class="card-text">Precio</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-fluid" src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Nombre del producto</h2>
+                        <p class="card-text">Precio</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="img-fluid" src="https://civilrights.msu.edu/_assets/images/placeholder/placeholder-200x200.jpg" alt="">
-                <div class="card-body">
-                    <h3 class="card-title">Nombre del producto</h3>
-                    <p class="card-text">Precio</p>
-                </div>
-            </div>
-        </div>
-    </div><!-- Cierra el card-product -->
+        </div><!-- Cierra el card-product -->
+    </main> <!-- Cierra main -->
     <footer id="my-contact" class="footer">           
         <div class="payment-medium">
             <h3 class="footer-title">Medios de pago</h3>

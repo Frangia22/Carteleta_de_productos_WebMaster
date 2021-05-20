@@ -18,6 +18,28 @@ img{
 body{
     background-color: var(--whitewine);
 }
+/*-------------------------------- Skip navigation ---------------------------*/
+.header{
+    background-color: transparent;
+    margin: 20px 0;
+}
+.sr-only{
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    top: 0;
+}
+.sr-only:focus{
+    background-color: #c5b68c;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    clip: auto;
+}
 /* ------------------------------------- Menu and button --------------------- */
 /* -------------------------------- Boton ----------------------------------*/
 .btn-menu{
@@ -86,7 +108,7 @@ body{
     text-align: center;
 }
 /*--------------------------------------------- Subtitle ----------------------------------------------------*/
-.header{
+.header-subtitle{
     background-color: transparent;
     padding: 10px 0;
 }
@@ -128,6 +150,9 @@ body{
 }
 .card-text{
     text-align: center;
+}
+.img-fluid{
+    margin: 10px;
 }
 /* ---------------------------------------- Footer --------------------- */
 .footer{
@@ -291,6 +316,10 @@ body{
 
 /* ---------------------------------------- Media queries --------------------- */
 @media (max-width: 1023px){
+    /* Skip navigation */
+    .header{
+        display: none;
+    }
     /*Menu*/
     /* Footer*/
     .footer{

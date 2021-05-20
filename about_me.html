@@ -9,6 +9,11 @@
     <title>The wines club</title>
 </head>
 <body>
+    <header class="header">
+        <a href="#nav" class="sr-only">Skip to navigation</a>
+        <a href="#content" class="sr-only">Skip to content</a>
+        <a href="#my-contact" class="sr-only">Skip to footer</a>
+    </header>
     <button class="btn-menu" type="submit" id="menubtn">
         <span class="burger-menu"></span>
     </button>
@@ -21,49 +26,51 @@
             <li class="list-item"><a href="#my-contact" class="list-item-link">Contacto</a></li>
         </ul>
     </nav><!-- Cierra el nav -->
-    <div class="breadcrumbs">
-        <ul class="list-bread">
-            <li class="bread-item"><a href="index.html" class="bread-item-link space">Inicio</a></li>
-            <li class="bread-item"><span class="bread-item-span">></span></li>
-            <li class="bread-item"><a href="about_me.html" class="bread-item-link active">Sobre nosotros</a></li>
-        </ul>
-    </div>
-    <div class="card-about">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOnWhqAj8DwGFb9JXutaRBUnjwWyAYJpKD2r-75KvVdtiNqbeZ824glN4hmemA6CDAoeU&usqp=CAU" class="img-fluid" alt="">
-        <div class="card-about-body">
-            <p class="card-about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis labore veniam fugit explicabo magnam repudiandae quos aliquam sit possimus aperiam, fugiat accusamus provident neque error similique, dolores pariatur harum corporis.</p>
-            <p class="card-about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cum velit veritatis perspiciatis dolorum, earum reiciendis deserunt repudiandae. Quae a quidem quibusdam, expedita culpa commodi assumenda officiis sapiente cumque architecto.</p>
-            <p class="card-about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis voluptatibus voluptate sequi ea exercitationem molestias ratione, perspiciatis quas, nobis assumenda tenetur recusandae aspernatur aut rem debitis perferendis laudantium. Optio, nisi!</p>
+    <main class="principal" id="content">
+        <div class="breadcrumbs">
+            <ul class="list-bread">
+                <li class="bread-item"><a href="index.html" class="bread-item-link space">Inicio</a></li>
+                <li class="bread-item"><span class="bread-item-span">></span></li>
+                <li class="bread-item"><a href="about_me.html" class="bread-item-link active">Sobre nosotros</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="container">
-        <div class="info">
-            <div class="shipping">
-                <div class="icon">
-                    <img src="/static/img/free_delivery.png" alt="">
-                </div>
-                <div class="title-info">
-                    <p class="text-info">Envio gratis</p>
-                </div>
-            </div>
-            <div class="shop">
-                <div class="icon">
-                    <img src="/static/img/shop.png" alt="">
-                </div>
-                <div class="title-info">
-                    <p class="text-info">Mira nuestros productos</p>
-                </div>
-            </div>
-            <div class="buysafe">
-                <div class="icon">
-                    <img src="/static/img/buysafe.png" alt="">
-                </div>
-                <div class="title-info">
-                    <p class="text-info">Compra segura</p>
-                </div>
+        <div class="card-about">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOnWhqAj8DwGFb9JXutaRBUnjwWyAYJpKD2r-75KvVdtiNqbeZ824glN4hmemA6CDAoeU&usqp=CAU" class="img-fluid" alt="">
+            <div class="card-about-body">
+                <p class="card-about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis labore veniam fugit explicabo magnam repudiandae quos aliquam sit possimus aperiam, fugiat accusamus provident neque error similique, dolores pariatur harum corporis.</p>
+                <p class="card-about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cum velit veritatis perspiciatis dolorum, earum reiciendis deserunt repudiandae. Quae a quidem quibusdam, expedita culpa commodi assumenda officiis sapiente cumque architecto.</p>
+                <p class="card-about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis voluptatibus voluptate sequi ea exercitationem molestias ratione, perspiciatis quas, nobis assumenda tenetur recusandae aspernatur aut rem debitis perferendis laudantium. Optio, nisi!</p>
             </div>
         </div>
-    </div><!-- Cierra el info -->
+        <div class="container">
+            <div class="info">
+                <div class="shipping">
+                    <div class="icon">
+                        <img src="/static/img/free_delivery.png" alt="">
+                    </div>
+                    <div class="title-info">
+                        <p class="text-info">Envio gratis</p>
+                    </div>
+                </div>
+                <div class="shop">
+                    <div class="icon">
+                        <img src="/static/img/shop.png" alt="">
+                    </div>
+                    <div class="title-info">
+                        <p class="text-info">Mira nuestros productos</p>
+                    </div>
+                </div>
+                <div class="buysafe">
+                    <div class="icon">
+                        <img src="/static/img/buysafe.png" alt="">
+                    </div>
+                    <div class="title-info">
+                        <p class="text-info">Compra segura</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Cierra el info -->
+    </main>
     <footer id="my-contact" class="footer about">
         <div class="payment-medium">
             <h3 class="footer-title">Medios de pago</h3>
