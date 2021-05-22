@@ -1,6 +1,12 @@
 :root{
     --whitewine: #f3f2de;
     --white: #f0f0f0;
+    --light-200-green: #cff4d2;
+    --light-500-green: #7be495;
+    --light-700-green: #56c596;
+    --lightblue: #329d9c;
+    --blue: #202062;
+    --dark-blue: #1e1f26;
     --lightwine: #c5b68c;
     --pinkwine: #642121;
     --black: #000000; 
@@ -16,7 +22,7 @@ img{
     max-width: 100%;
 }
 body{
-    background-color: var(--whitewine);
+    background: linear-gradient(180deg, var(--light-200-green) 12%, var(--light-500-green) 62%);
 }
 /*-------------------------------- Skip navigation ---------------------------*/
 .header{
@@ -34,7 +40,7 @@ body{
     top: 0;
 }
 .sr-only:focus{
-    background-color: #c5b68c;
+    background-color: var(--lightblue);
     padding: 5px;
     width: auto;
     height: auto;
@@ -64,12 +70,13 @@ body{
     text-decoration: none;
     display: block;
     padding: 10px 0;
-    color: var(--pinkwine);
+    color: var(--blue);
+    font-weight: bold;
     font-size: 18px;
 }
 .list-item-link:hover{
-    color: var(--black);
-    background-color: var(--lightwine);
+    color: var(--white);
+    background-color: var(--blue);
 }
 /* ------------------------------------------ Slider img ----------------- */
 .carousel{
@@ -124,7 +131,7 @@ body{
 .subtitle-item-link{
     text-decoration: none;
     margin-right: 20px;
-    color: var(--pinkwine);
+    color: var(--blue);
 }
 .link-v-m:hover{
     color: var(--black);
@@ -139,7 +146,7 @@ body{
 .card{
     margin: 20px auto;
     padding: 5px;
-    border: 1px solid var(--pinkwine);
+    border: 1px solid var(--lightblue);
     border-radius: 10px;
 }
 .card-body{
@@ -152,18 +159,14 @@ body{
     text-align: center;
 }
 .img-fluid{
-    margin: 10px;
+    display: flex;
+    margin: auto;
 }
 /* ---------------------------------------- Footer --------------------- */
 .footer{
-    background-color: var(--lightwine);
+    background-color: var(--light-700-green);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
-.about{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
 }
 /*------- Medios de pago -------*/
 .payment-medium, .contact-media, .social-media, .news{
@@ -248,7 +251,7 @@ body{
     padding: 10px 0;
 }
 .bread-item ,.by{
-    background-color: var(--lightwine);
+    background-color: var(--lightblue);
     margin: 0 5px;
     padding: 5px;
     transform: skewX(-20deg);
@@ -326,7 +329,9 @@ body{
         gap: 15px;
     }
     .about{
-        position: static;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
     }
     .form-news-btn{
         margin: 5px auto;
@@ -340,7 +345,7 @@ body{
         border-radius: 6px;
     }
     .burger-menu{
-        background-image: url(/static/img/burger-menu.png);
+        background-image: url(/static/img/menu-bg-light.png);
         display: inline-block;
         width: 2.5em;
         height: 2.5em;
@@ -368,7 +373,7 @@ body{
     .mostrarFiltro{
         display: block;
         position: absolute;
-        background-color: var(--lightwine);
+        background-color: var(--lightblue);
         margin: -25px 20px;
         padding: 5px;
     }
@@ -378,11 +383,11 @@ body{
     }
     .btn-filter{
         padding: 0 10px;
-        background-color: var(--lightwine);
+        background-color: var(--lightblue);
         color: var(--black);
         font-size: 16px;
         font-weight: bold;
-        border: 1px solid var(--lightwine);
+        border: 1px solid var(--lightblue);
         transform: skewX(-20deg);
         box-shadow: -2px 10px 20px -6px rgb(0,25,14);
     }
