@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mate+SC&family=Shadows+Into+Light&display=swap');
 :root{
     --whitewine: #f3f2de;
     --white: #f0f0f0;
@@ -23,6 +25,7 @@ img{
 }
 body{
     background: linear-gradient(180deg, var(--light-200-green) 12%, var(--light-500-green) 62%);
+    font-family: 'Mate SC', 'Shadows Into Light', Impact, sans-serif, cursive;
 }
 /*-------------------------------- Skip navigation ---------------------------*/
 .header{
@@ -338,6 +341,9 @@ body{
     }
 }
 @media (max-width: 767px){
+    body{
+        font-family: 'Shadows Into Light', Impact, sans-serif, cursive;
+    }
     .btn-menu{
         display: block;
         background-color: transparent;
@@ -390,6 +396,7 @@ body{
         border: 1px solid var(--lightblue);
         transform: skewX(-20deg);
         box-shadow: -2px 10px 20px -6px rgb(0,25,14);
+        font-family: 'Shadows Into Light', Impact, sans-serif, cursive;
     }
     /* Footer*/
     .footer{
