@@ -24,6 +24,7 @@ img{
     max-width: 100%;
 }
 body{
+    min-height: 100vh;
     background: linear-gradient(180deg, var(--light-200-green) 12%, var(--light-500-green) 62%);
     font-family: 'Mate SC', 'Shadows Into Light', Impact, sans-serif, cursive;
 }
@@ -170,6 +171,10 @@ body{
     background-color: var(--light-700-green);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+/* cf quita los margenes del contenedor(container)*/
+.cf{
+    margin: 0;
 }
 /*------- Medios de pago -------*/
 .payment-medium, .contact-media, .social-media, .news{
@@ -319,7 +324,6 @@ body{
     margin: 5px auto;
 }
 /* ----------------------------------------- Fin de sobre nosotros --------------------------------------------*/
-
 /* ---------------------------------------- Media queries --------------------- */
 @media (max-width: 1023px){
     /* Skip navigation */
@@ -331,14 +335,9 @@ body{
     .footer{
         gap: 15px;
     }
-    .about{
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-    }
     .form-news-btn{
         margin: 5px auto;
-    }
+    }    
 }
 @media (max-width: 767px){
     body{
@@ -402,18 +401,32 @@ body{
     .footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    .payment-medium, .contact-media, .social-media, .news{
-        width: 50vw;
-    }
+    }       
 }
-@media (max-width: 400px){
+@media (max-width: 400px) {
     .list-item{
         min-width: 100%;
     }
-    
     .footer{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 180px);
+    }
+    .footer-title{
+        margin-left: 15px;
+    }
+    .payment-medium, .contact-media, .social-media, .news{
+        min-width: 100%;
+    }       
+}
+@media (max-width: 325px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+    .form-news{
+        margin: auto 30px;        
+    }
+    .form-news-btn{
+        margin-left: 10px;
     }
 }
