@@ -1,34 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+/*--------------------------------------- Fuente ---------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mate+SC&family=Shadows+Into+Light&display=swap');
+/*--------------------------------------- Variables ---------------------------------------------*/
 :root{
-    --whitewine: #f3f2de;
-    --white: #f0f0f0;
+    --bottom: 20px;
+    --black: #000000; 
+    --blue: #202062;
+    --dark-blue: #1e1f26;
     --light-200-green: #cff4d2;
     --light-500-green: #7be495;
     --light-700-green: #56c596;
     --lightblue: #329d9c;
-    --blue: #202062;
-    --dark-blue: #1e1f26;
-    --lightwine: #c5b68c;
-    --pinkwine: #642121;
-    --black: #000000; 
     --lightblack: #464242;
-    --bottom: 20px;
+    --lightwine: #c5b68c;
+    --pinkwine: #642121;  
+    --whitewine: #f3f2de;
+    --white: #f0f0f0;
 }
+/*--------------------------------------- Generales ---------------------------------------------*/
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 img{
     max-width: 100%;
 }
 body{
-    min-height: 100vh;
     background: linear-gradient(180deg, var(--light-200-green) 12%, var(--light-500-green) 62%);
     font-family: 'Mate SC', 'Shadows Into Light', Impact, sans-serif, cursive;
+    min-height: 100vh;
 }
-/*-------------------------------- Skip navigation ---------------------------*/
+/*-------------------------------- Header / Skip navigation ---------------------------*/
 .header{
     background-color: transparent;
     margin: 20px 0;
@@ -85,8 +87,8 @@ body{
 /* ------------------------------------------ Slider img ----------------- */
 .carousel{
     background-color: transparent;
-    padding-top: 10px;
     margin-bottom: var(--bottom);
+    padding-top: 10px;
 }
 .carousel-item{
     text-align: center;
@@ -165,80 +167,6 @@ body{
 .img-fluid{
     display: flex;
     margin: auto;
-}
-/* ---------------------------------------- Footer --------------------- */
-.footer{
-    background-color: var(--light-700-green);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-/* cf quita los margenes del contenedor(container)*/
-.cf{
-    margin: 0;
-}
-/*------- Medios de pago -------*/
-.payment-medium, .contact-media, .social-media, .news{
-    margin: 20px auto;
-}
-.footer-title{
-    margin-bottom: 10px;
-}
-.payment-list, .contact-list, .social-list{
-    list-style: none;
-}
-.payment-list{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-.payment-item{
-    margin: 5px 20px;
-}
-.payment-icon{
-    max-width: 48px;
-}
-/* ----------- Contacto ---------*/
-.contact-item{
-    display: flex;
-    align-items: center;
-}
-.contact-item-link, .social-item-link{
-    text-decoration: none;
-}
-.img-contact{
-    margin: 5px;
-}
-/*----------- Redes sociales ---------*/
-.social-list{
-    display: flex;
-    justify-content: space-evenly;
-}
-.social-item-link{
-    margin: auto 10px;
-}
-.img-social{
-    filter: saturate(20%) brightness(10%) contrast(50%) opacity(60%);
-    transition: all .6s cubic-bezier(.19,1,.22,1);
-}
-.img-social:hover{
-    transform: translate(10px, -10px);
-    filter: none;
-}
-/* ------------ Newsletter ----------------*/
-.form-news{
-    display: inline-block;
-    font-size: 0;
-}
-.form-news-input, .form-news-btn{
-    min-height: 32px;
-    border-radius: 5px;
-}
-.form-news-btn{
-    padding: 0 10px;
-    background-color: var(--whitewine);
-    color: var(--black);
-    font-weight: bold;
-    border: 1px solid var(--whitewine);
 }
 /* ---------------------------------------------- --------------------------------------------------------------------------------------------*/
 /* ------------------------------------ Productos ------------------------------------*/
@@ -323,6 +251,81 @@ body{
     text-align: justify;
     margin: 5px auto;
 }
+/*------------------------------------------------------------------------------------*/
+/* ---------------------------------------- Footer --------------------- */
+.footer{
+    background-color: var(--light-700-green);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* cf quita los margenes del contenedor(container)*/
+.cf{
+    margin: 0;
+}
+/*------- Medios de pago -------*/
+.payment-medium, .contact-media, .social-media, .news{
+    margin: 20px auto;
+}
+.footer-title{
+    margin-bottom: 10px;
+}
+.payment-list, .contact-list, .social-list{
+    list-style: none;
+}
+.payment-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.payment-item{
+    margin: 5px 20px;
+}
+.payment-icon{
+    max-width: 48px;
+}
+/* ----------- Contacto ---------*/
+.contact-item{
+    display: flex;
+    align-items: center;
+}
+.contact-item-link, .social-item-link{
+    text-decoration: none;
+}
+.img-contact{
+    margin: 5px;
+}
+/*----------- Redes sociales ---------*/
+.social-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-item-link{
+    margin: auto 10px;
+}
+.img-social{
+    filter: saturate(20%) brightness(10%) contrast(50%) opacity(60%);
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+}
+.img-social:hover{
+    transform: translate(10px, -10px);
+    filter: none;
+}
+/* ------------ Newsletter ----------------*/
+.form-news{
+    display: inline-block;
+    font-size: 0;
+}
+.form-news-input, .form-news-btn{
+    min-height: 32px;
+    border-radius: 5px;
+}
+.form-news-btn{
+    padding: 0 10px;
+    background-color: var(--whitewine);
+    color: var(--black);
+    font-weight: bold;
+    border: 1px solid var(--whitewine);
+}
 /* ----------------------------------------- Fin de sobre nosotros --------------------------------------------*/
 /* ---------------------------------------- Media queries --------------------- */
 @media (max-width: 1023px){
@@ -330,7 +333,6 @@ body{
     .header{
         display: none;
     }
-    /*Menu*/
     /* Footer*/
     .footer{
         gap: 15px;
@@ -343,6 +345,7 @@ body{
     body{
         font-family: 'Shadows Into Light', Impact, sans-serif, cursive;
     }
+    /*------------------------------------- Nav ----------------------------------------------*/
     .btn-menu{
         display: block;
         background-color: transparent;
@@ -404,6 +407,7 @@ body{
     }       
 }
 @media (max-width: 400px) {
+    /*------------------------------------- Footer ----------------------------------------------*/
     .list-item{
         min-width: 100%;
     }
@@ -419,6 +423,7 @@ body{
     }       
 }
 @media (max-width: 325px){
+    /*------------------------------------- Footer ----------------------------------------------*/
     .footer{
         display: grid;
         grid-template-columns: 1fr;        

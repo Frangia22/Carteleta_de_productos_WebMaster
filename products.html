@@ -34,8 +34,8 @@
                 <li class="bread-item"><a href="products.html" class="bread-item-link active">Productos</a></li>
             </ul>
             <div class="order-by">
-                <label for="" class="by">Ordenar por: </label>
-                <select class="select-order" id="">
+                <label for="order-by" class="by">Ordenar por: </label>
+                <select class="select-order" id="order-by">
                     <option value="price-ascending">Precio: Menor a Mayor</option>
                     <option value="price-descending">Precio: Mayor a Menor</option>
                     <option value="created-ascending">Mas viejo a mas nuevo</option>
@@ -60,13 +60,13 @@
                 <h1 class="title-category">Filtros</h1>
                 <h2 class="subtitle-filter">Filtro 1</h2>
                 <ul class="list-filter">
-                    <li class="item-filter"><input class="item-filter-input" type="checkbox"><label class="item-filter-label" for="">Filtro 1</label></input></li>
-                    <li class="item-filter"><input class="item-filter-input" type="checkbox"><label class="item-filter-label" for="">Filtro 2</label></input></li>
-                    <li class="item-filter"><input class="item-filter-input" type="checkbox"><label class="item-filter-label" for="">Filtro 3</label></input></li>
-                    <li class="item-filter"><input class="item-filter-input" type="checkbox"><label class="item-filter-label" for="">Filtro 4</label></input></li>
+                    <li class="item-filter"><input class="item-filter-input" type="checkbox" id="filtro-1"><label class="item-filter-label" for="filtro-1">Filtro 1</label></li>
+                    <li class="item-filter"><input class="item-filter-input" type="checkbox" id="filtro-2"><label class="item-filter-label" for="filtro-2">Filtro 2</label></li>
+                    <li class="item-filter"><input class="item-filter-input" type="checkbox" id="filtro-3"><label class="item-filter-label" for="filtro-3">Filtro 3</label></li>
+                    <li class="item-filter"><input class="item-filter-input" type="checkbox" id="filtro-4"><label class="item-filter-label" for="filtro-4">Filtro 4</label></li>
                 </ul>
                 <h2 class="subtitle-filter">Precios</h2>
-                <input type="range" min="$0" max="$10000">
+                <input type="range" min="0" max="10000">
             </div>
             <div class="product">
                 <div class="card">
@@ -157,7 +157,7 @@
         </div>
         <div class="news">
             <h3 class="footer-title">Suscribirse</h3>
-            <form action="" class="form-news">
+            <form action="form.js" class="form-news">
                 <input type="email" class="form-news-input" placeholder="Correo Electronico ">
                 <button class="form-news-btn" type="submit">Suscribe</button>
             </form>
