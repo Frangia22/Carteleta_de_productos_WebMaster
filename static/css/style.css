@@ -368,6 +368,9 @@ body{
     .desplegar{
         display: block;
     }
+    .list-item-link{
+        font-size: 1.4em;
+    }
     /* Principal productos */
     .principal-products{
         display: flex;
@@ -400,6 +403,10 @@ body{
         box-shadow: -2px 10px 20px -6px rgb(0,25,14);
         font-family: 'Shadows Into Light', Impact, sans-serif, cursive;
     }
+    /*About*/
+    .card-about-text{
+        font-size: 1.4em;
+    }
     /* Footer*/
     .footer{
         display: grid;
@@ -407,6 +414,12 @@ body{
     }       
 }
 @media (max-width: 400px) {
+    /* ------------------------------ Subtitle Nuestros productos----------------*/
+    .subtitle-list{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+    }
     /*------------------------------------- Footer ----------------------------------------------*/
     .list-item{
         min-width: 100%;
@@ -422,7 +435,7 @@ body{
         min-width: 100%;
     }       
 }
-@media (max-width: 325px){
+@media (max-width: 374px){
     /*------------------------------------- Footer ----------------------------------------------*/
     .footer{
         display: grid;
