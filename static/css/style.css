@@ -33,7 +33,9 @@ body{
 /*-------------------------------- Header / Skip navigation ---------------------------*/
 .header{
     background-color: transparent;
-    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
 }
 .sr-only{
     position: absolute !important;
@@ -51,6 +53,15 @@ body{
     width: auto;
     height: auto;
     clip: auto;
+}
+/*--------------- Clima actual ------------------*/
+.weather-link{
+    margin: auto 10px;
+    text-decoration: none;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 /* ------------------------------------- Menu and button --------------------- */
 /* -------------------------------- Boton ----------------------------------*/
