@@ -1,0 +1,27 @@
+{
+  "name": "carteleta_de_productos_webmaster",
+  "version": "1.0.0",
+  "description": "Ecommerce de vinos",
+  "main": "index.js",
+  "dependencies": {
+    "swiper": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frangia22/Carteleta_de_productos_WebMaster.git"
+  },
+  "author": "Frangia22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frangia22/Carteleta_de_productos_WebMaster/issues"
+  },
+  "homepage": "https://github.com/Frangia22/Carteleta_de_productos_WebMaster#readme"
+}
